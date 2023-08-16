@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    background: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    box-shadow: 2px 2px 1px #dbdbdb;
+}
+
+.card .result{
+    flex-basis: 50%;
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.result h5{
+    font-size: 18px;
+    color: rgb(221, 209, 209);
+}
+
+.result h1{
+    color: #fff;
+    font-weight: 800;
+    font-size: 54px;
+}
+
+.result p{
+    color: rgb(185, 178, 178);
+}
+
+.result .circle{
+    width: 150px;
+    height: 150px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 100%;
+}
+
+h2, p{
+   text-align: center;
+}
+
+h2{
+    color: #fff;
+    font-weight: 700;
+}
+
+.description{
+    flex-basis: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.card .description .assessment{
+    background: hsl(241, 100%, 89%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.assessment div{
+    display: flex;
+    align-items: center;
+}
+
+.description h2{
+    color: #000;
+    font-weight: 500;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: hsla(224, 30%, 27%, 1);
+    color: hsl(241, 100%, 89%);
+}
+
+#reaction{
+    color: hsla(2, 57%, 63%, 1);
+}
+
+#memory{
+    color: hsla(38, 92%, 61%, 1);
+}
+
+#verbal{
+    color: hsla(172, 59%, 47%, 1);
+}
+
+#visual{
+    color: hsla(234, 82%, 46%, 1);
+}
+
+span{
+    color: grey;
+}
+
+#react{
+    background: hsla(6, 100%, 98%, 1);
+}
+
+#mem{
+    background: hsla(42, 100%, 97%, 1);
+}
+
+#ver{
+    background: hsla(173, 53%, 97%, 1);
+}
+
+#vis{
+    background: hsla(240, 71%, 97%, 1);
+}
+
+@media screen and (max-width:345px){
+    *{
+        box-sizing: border-box;
+    }
+
+    .card{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .card .result{
+        width: 100%;
+        flex-basis: 45%;
+        height: 50vh;
+        border-radius: 0 0 20px 20px;
+        padding: 30px;
+    }
+
+    .card .result .circle{
+        margin: 10px 0;
+    }
+
+    .card .description{
+        width: 100%;
+        flex-basis: 55%;
+        height: 50vh;
+    }
+
+
+
+    
+}
